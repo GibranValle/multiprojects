@@ -1,11 +1,15 @@
+
 .componentBox {
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .component {
+    background-color: white;
     flex: 1 1 300px;
-    background-color: rgb(237, 233, 233);
     max-width: 450px;
     padding: 1em;
     display: flex;
@@ -14,5 +18,30 @@
     align-items: center;
     border-radius: 1em;
     margin: 1em;
-    box-shadow: 2px 2px 5px #0000005f;
+    box-shadow: 4px 4px 10px #000000a3;
+}
+
+.button-static,
+.button-rolling {
+    padding: 15px 20px;
+    font-size: 2em;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 60%;
+}
+
+.button-static:hover {
+    cursor: pointer;
+    outline: 5px solid #695acd5e;
+}
+
+.button-rolling {
+    background-color: #130950;
+    filter: blur(0.5px);
+}
+
+.button-rolling:hover {
+    outline: 5px solid #12095041;
 }

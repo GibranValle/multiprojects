@@ -1,0 +1,62 @@
+.Coin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    text-align: center;
+    min-width: 150px
+}
+
+.Coin img {
+    max-width: 150px;
+    margin-bottom: 0.5em;
+}
+
+.Coin-rolling {
+    animation-name: spin;
+    animation-duration: 600ms;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+        filter: blur(0);
+    }
+
+    15% {
+        transform: rotate3d(0, 1, 0, 60deg);
+        filter: blur(2px);
+    }
+
+    30% {
+        transform: rotate3d(0, 1, 0, 120deg);
+        filter: blur(4px);
+    }
+
+    45% {
+        transform: rotate3d(0, 1, 0, 180deg);
+        filter: blur(6px);
+    }
+
+    60% {
+        transform: rotate3d(0, 1, 0, 240deg);
+        filter: blur(4px);
+    }
+
+    75% {
+        transform: rotate3d(0, 1, 0, 300deg);
+        filter: blur(2px);
+    }
+
+    90% {
+        transform: rotate3d(0, 1, 0, 330deg);
+        filter: blur(1px);
+    }
+
+    to {
+        transform: rotate3d(0, 0, 0, 0);
+        filter: blur(0);
+    }
+}

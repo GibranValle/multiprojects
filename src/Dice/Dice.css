@@ -1,3 +1,10 @@
+.Dice-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1em;
+}
+
 .Dice {
     color: slateblue;
     font-size: 10em;
@@ -42,35 +49,4 @@
     to {
         transform: translate3d(0, 0, 0);
     }
-}
-
-.Dice-box {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    gap: 1em;
-}
-
-.button-static,
-.button-rolling {
-    padding: 15px 20px;
-    font-size: 2em;
-    background-color: slateblue;
-    color: white;
-    border: none;
-    border-radius: 15px;
-}
-
-.button-static:hover {
-    cursor: pointer;
-    outline: 5px solid #695acd5e;
-}
-
-.button-rolling {
-    background-color: #130950;
-    filter: blur(0.5px);
-}
-
-.button-rolling:hover {
-    outline: 5px solid #12095041;
 }
