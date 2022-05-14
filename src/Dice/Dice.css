@@ -1,0 +1,76 @@
+.Dice {
+    color: slateblue;
+    font-size: 10em;
+}
+
+.Dice-rolling {
+    animation-name: shake;
+    animation-duration: 600ms;
+}
+
+@keyframes shake {
+    from {
+        transform: translate3d(0, 0, 0);
+        filter: blur(0);
+    }
+
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        filter: blur(5px);
+    }
+
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 4deg);
+        filter: blur(4px);
+    }
+
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        filter: blur(3px);
+    }
+
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        filter: blur(2px);
+    }
+
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        filter: blur(1px);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.Dice-box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 1em;
+}
+
+.button-static,
+.button-rolling {
+    padding: 15px 20px;
+    font-size: 2em;
+    background-color: slateblue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.button-static:hover {
+    cursor: pointer;
+    outline: 5px solid #695acd5e;
+}
+
+.button-rolling {
+    background-color: #130950;
+    filter: blur(0.5px);
+}
+
+.button-rolling:hover {
+    outline: 5px solid #12095041;
+}
