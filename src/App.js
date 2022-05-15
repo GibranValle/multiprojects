@@ -2,7 +2,7 @@ import './App.css'
 
 import RollDice from "./Dice/RollDice";
 import CoinFlipper from './Coin/CoinFlipper';
-
+import Hangman from './Hangman/Hangman';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <h1 className='mainTitle'>Component showdown</h1>
         <RollDice />
         <CoinFlipper />
+        <Hangman />
       </div>
     </div>
   );

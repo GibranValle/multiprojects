@@ -22,10 +22,10 @@ class Coin extends PureComponent {
           <h2>{this.props.Heads}</h2>
         </div>
         <img 
-          className={this.props.rolling && 'Coin-rolling'}
+          className={this.props.rolling ? 'Coin-rolling' : ''}
           src={this.props.side === 'heads' ? this.props.sol.url : this.props.aguila.url} 
           alt={this.props.side === 'heads' ? this.props.sol.name : this.props.aguila.name} 
-        ></img>
+        />
         <div className='counter'>
           <h1>Aguila:</h1>
           <h2>{this.props.Tails}</h2>

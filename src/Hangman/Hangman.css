@@ -1,0 +1,65 @@
+.Hangman :is(h1, h3) {
+    margin: 0;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 0.3em;
+    justify-content: center;
+    max-width: 400px;
+    margin-bottom: 1em;
+}
+
+.key {
+    padding: 0.1em;
+    background-color: slateblue;
+    color: white;
+    font-weight: 700;
+    font-size: 1.25em;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 0.25em;
+    box-shadow: 0 4px 0 #342883;
+    transition: all 100ms ease-out;
+}
+
+.key:hover {
+    cursor: pointer;
+    transform: translate(0, 2px);
+    box-shadow: inset 0px 5px 10px 0px #342883;
+}
+
+.disabled {
+    background-color: lightgrey;
+    color: grey;
+    box-shadow: 0 4px 0 #646464;
+}
+
+.disabled:hover {
+    cursor: default;
+    transform: none;
+    box-shadow: 0 4px 0 #646464;
+}
+
+
+
+.secret {
+    margin: 0 0 0.5em 1em;
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 1em;
+}
+
+.loser {
+    color: red;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.winner {
+    color: green;
+    font-size: 1.5em;
+    font-weight: 700;
+}
