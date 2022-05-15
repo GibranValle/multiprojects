@@ -4,9 +4,8 @@ import './Hangman.css'
 class Hangman extends PureComponent {
   static defaultProps = {
     images: [
-      './images/1.png', './images/2.png', './images/3.png',
-      './images/4.png', './images/5.png', './images/6.png',
-      './images/7.png'
+      'Hangman/images/1.png', 'Hangman/images/2.png', 'Hangman/images/3.png', 'Hangman/images/4.png', 
+      'Hangman/images/5.png', 'Hangman/images/6.png', 'Hangman/images/7.png', 
     ],
     words: [
       'abuela', 'blanco', 'cabeza', 'densas', 'echate', 'firmes', 'herida', 'irrita', 'jarosa', 'kansas', 'llenas', 'mixtas',
@@ -98,7 +97,7 @@ class Hangman extends PureComponent {
         <h1>Ahorcado</h1>   
         <div className={messageClass}>{message}</div>
         <h3>Errores: {this.state.tries}</h3>
-        <img alt={this.state.tries} src={require(`${this.props.images[this.state.tries]}`)}/>
+        <img alt={this.state.tries} src={this.props.images[this.state.tries]}/>
         <div className='secret'>{secret}</div>
         <div className='keyboard'>{keyboard}</div>
         <button onClick={this.handleClick} className='button-static'>Reiniciar</button>
