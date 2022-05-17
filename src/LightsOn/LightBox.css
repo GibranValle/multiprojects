@@ -1,0 +1,27 @@
+.LightBox {
+    width: 75px;
+    height: 75px;
+    background-color: #47454593;
+    border-radius: 2px;
+    transition: background-color 400ms ease-in;
+}
+
+.LightBox:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 4px #7bdb0d,
+                -1px -1px 4px #7bdb0d,
+                1px -1px 4px #7bdb0d,
+                -1px 1px 4px #7bdb0d;
+}
+
+.lit {
+    background-color: #2478c7;
+}
+
+.lit:hover{
+    background-color: #1766af ;
+    box-shadow: inset 1px 1px 5px #47454593,
+    inset -1px -1px 5px #47454593,
+    inset 1px -1px 5px #47454593,
+    inset -1px 1px 5px #47454593;
+}

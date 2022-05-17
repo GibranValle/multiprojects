@@ -3,6 +3,7 @@ import './App.css'
 import RollDice from "./Dice/RollDice";
 import CoinFlipper from './Coin/CoinFlipper';
 import Hangman from './Hangman/Hangman';
+import LightsOn from './LightsOn/LightsOn';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <RollDice />
         <CoinFlipper />
         <Hangman />
+        <LightsOn />
       </div>
     </div>
   );
