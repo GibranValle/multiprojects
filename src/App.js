@@ -4,6 +4,7 @@ import RollDice from "./Dice/RollDice";
 import CoinFlipper from './Coin/CoinFlipper';
 import Hangman from './Hangman/Hangman';
 import LightsOn from './LightsOn/LightsOn';
+import TodoList from './TodoList/TodoList';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <CoinFlipper />
         <Hangman />
         <LightsOn />
+        <TodoList />
       </div>
     </div>
   );

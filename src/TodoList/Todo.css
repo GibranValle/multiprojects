@@ -1,0 +1,102 @@
+.TodoList ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.Todo-item {
+    flex: 1 1 6em;
+    padding: 0.25em 0.5em;
+    background-color: #fafafa;
+    border-radius: 0.25em;
+    box-shadow: 2px 2px 2px #0000002f;
+}
+
+.Todo-item:hover {}
+
+
+
+.Todo-text {
+    padding: 0.25em 0;
+}
+
+.Todo-buttons {
+    background-color: #eee;
+    background-color: transparent;
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+}
+
+/* ---------------  ANIMATION  ----------------------*/
+.Todo-buttons {
+    /* start hidden */
+    transform: scale(0, 0);
+    transform-origin: center;
+    height: auto;
+    max-height: 0;
+    opacity: 0;
+    transition: transform 200ms linear,
+        opacity 100ms step-end,
+        max-height 200ms linear;
+}
+
+.Todo-item:hover>.Todo-buttons {
+    /* end visible */
+    opacity: 1;
+    transform: scale(1, 1);
+    max-height: 3em;
+}
+
+/* ---------------  ANIMATION  ----------------------*/
+
+.Todo-button-edit,
+.Todo-button-delete,
+.Todo-button-ok {
+    width: 6em;
+    border: none;
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-weight: 700;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+}
+
+.Todo-button-ok{
+    border: 3px solid green;
+    color: green;
+}
+
+.Todo-button-ok:hover{
+    background-color: green;
+    color: white;
+}
+
+.Todo-button-delete {
+    border: 3px solid #f00;
+    color: #f00;
+}
+
+.Todo-button-edit {
+    border: 3px solid #0059ff;
+    color: #0059ff;
+}
+
+.Todo-button-delete:hover {
+    background-color: #ff0000;
+    color: white;
+}
+
+.Todo-button-edit:hover {
+    background-color: #0059ff;
+    color: white;
+}
+
+.Todo-form {
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
