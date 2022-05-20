@@ -5,6 +5,7 @@ import CoinFlipper from './Coin/CoinFlipper';
 import Hangman from './Hangman/Hangman';
 import LightsOn from './LightsOn/LightsOn';
 import TodoList from './TodoList/TodoList';
+import ExcelSeparator from './ExcelSeparator/ExcelSeparator';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hangman />
         <LightsOn />
         <TodoList />
+        <ExcelSeparator />
       </div>
     </div>
   );

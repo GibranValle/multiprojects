@@ -1,0 +1,73 @@
+.Excel label {
+    font-weight: 700;
+    padding: 0.25em 0.5em;
+}
+
+.Excel table {
+    margin-top: 0.5em;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.Excel th,
+td {
+    padding: 0.2em 0.4em;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-width: 0 0 0.5px 0;
+}
+
+.Excel th {
+    border: none;
+    text-transform: capitalize;
+    background-color: #00000010;
+}
+
+.Excel th:first-child {
+    border-radius: 0.5em 0 0 0;
+}
+
+.Excel th:last-child {
+    border-radius: 0 0.5em 0 0;
+}
+
+.Excel-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Excel h1 {
+    margin: 0.1em 0;
+    font-size: 1.5em;
+}
+
+.Excel textarea {
+    padding: 0.5em;
+    border: none;
+    background-color: #fdfdfd;
+    border-radius: 0.5em;
+    outline: solid 2px #fafafa;
+    box-shadow: 2px 2px 6px #00000099;
+}
+
+.Excel textarea:focus {
+    outline: solid 2px slateblue;
+}
+
+.Excel button {
+    background-color: white;
+    margin-top: 0.5em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-weight: 700;
+    color: slateblue;
+    border: 1px solid slateblue;
+    transition: all 200ms ease;
+}
+
+.Excel button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: slateblue;
+}
